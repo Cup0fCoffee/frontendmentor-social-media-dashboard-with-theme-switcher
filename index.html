@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="./script.js"></script>
+
+  <script>
+    initTheme();
+  </script>
+
+  <title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="dashboard">
+      <header class="header">
+        <section class="header__title-container">
+          <header class="header__title">
+            Social Media Dashboard
+          </header>
+
+          <div class="header__subtitle">
+            Total Followers: 23,004
+          </div>
+        </section>
+
+        <section class="header__theme-toggle-container">
+          <span class="header__theme-toggle-text">
+            Dark Mode
+          </span>
+
+          <label>
+            <span class="theme-toggle">
+              <input class="theme-toggle__checkbox" type="checkbox" style="display: none;">
+              <div class="theme-toggle__inner"></div>
+            </span>
+          </label>
+        </section>
+      </header>
+
+      <section class="general">
+        <div class="general-card general-card--facebook">
+          <div class="general-card__header">
+            <span class="general-card__logo"></span>
+            <span class="general-card__social-media-name">
+              @nathanf
+            </span>
+          </div>
+          <div class="general-card__stats">
+            <div class="general-card__stats-numbers">
+              1987
+            </div>
+            <div class="general-card__stats-text">
+              Followers
+            </div>
+          </div>
+          <div class="general-card__today general-card__today--up">
+            <span class="general-card__today-arrow"></span>
+            12 Today
+          </div>
+        </div>
+
+        <div class="general-card general-card--twitter">
+          <div class="general-card__header">
+            <span class="general-card__logo"></span>
+            <span class="general-card__social-media-name">
+              @nathanf
+            </span>
+          </div>
+          <div class="general-card__stats">
+            <div class="general-card__stats-numbers">
+              1044
+            </div>
+            <div class="general-card__stats-text">
+              Followers
+            </div>
+          </div>
+          <div class="general-card__today general-card__today--up">
+            <span class="general-card__today-arrow"></span>
+            99 Today
+          </div>
+        </div>
+
+        <div class="general-card general-card--instagram">
+          <div class="general-card__header">
+            <span class="general-card__logo"></span>
+            <span class="general-card__social-media-name">
+              @realnathanf
+            </span>
+          </div>
+          <div class="general-card__stats">
+            <div class="general-card__stats-numbers">
+              11k
+            </div>
+            <div class="general-card__stats-text">
+              Followers
+            </div>
+          </div>
+          <div class="general-card__today general-card__today--up">
+            <span class="general-card__today-arrow"></span>
+            1099 Today
+          </div>
+        </div>
+
+        <div class="general-card general-card--youtube">
+          <div class="general-card__header">
+            <span class="general-card__logo"></span>
+            <span class="general-card__social-media-name">
+              Nathan F.
+            </span>
+          </div>
+          <div class="general-card__stats">
+            <div class="general-card__stats-numbers">
+              8239
+            </div>
+            <div class="general-card__stats-text">
+              Subscribers
+            </div>
+          </div>
+          <div class="general-card__today general-card__today--down">
+            <span class="general-card__today-arrow"></span>
+            144 Today
+          </div>
+        </div>
+      </section>
+
+      <section class="overview">
+        <header class="overview__header">
+          Overview - Today
+        </header>
+
+        <div class="overview-card overview-card--facebook">
+          <div class="overview-card__title">Page Views</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">87</div>
+          <div class="overview-card__today overview-card__today--up">
+            <span class="overview-card__today-arrow"></span>
+            3%
+          </div>
+        </div>
+
+        <div class="overview-card overview-card--facebook">
+          <div class="overview-card__title">Likes</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">52</div>
+          <div class="overview-card__today overview-card__today--down">
+            <span class="overview-card__today-arrow"></span>
+            2%
+          </div>
+        </div>
+
+        <div class="overview-card overview-card--instagram">
+          <div class="overview-card__title">Likes</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">5462</div>
+          <div class="overview-card__today overview-card__today--up">
+            <span class="overview-card__today-arrow"></span>
+            2257%
+          </div>
+        </div>
+
+        <div class="overview-card overview-card--instagram">
+          <div class="overview-card__title">Profile Views</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">52k</div>
+          <div class="overview-card__today overview-card__today--up">
+            <span class="overview-card__today-arrow"></span>
+            1375%
+          </div>
+        </div>
+
+        <div class="overview-card overview-card--twitter">
+          <div class="overview-card__title">Retweets</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">117</div>
+          <div class="overview-card__today overview-card__today--up">
+            <span class="overview-card__today-arrow"></span>
+            303%
+          </div>
+        </div>
+
+        <div class="overview-card overview-card--twitter">
+          <div class="overview-card__title">Likes</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">507</div>
+          <div class="overview-card__today overview-card__today--up">
+            <span class="overview-card__today-arrow"></span>
+            553%
+          </div>
+        </div>
+
+        <div class="overview-card overview-card--youtube">
+          <div class="overview-card__title">Likes</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">107</div>
+          <div class="overview-card__today overview-card__today--down">
+            <span class="overview-card__today-arrow"></span>
+            19%
+          </div>
+        </div>
+
+        <div class="overview-card overview-card--youtube">
+          <div class="overview-card__title">Total Views</div>
+          <div class="overview-card__logo"></div>
+          <div class="overview-card__stat">1407</div>
+          <div class="overview-card__today overview-card__today--down">
+            <span class="overview-card__today-arrow"></span>
+            12%
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+
+  <script>
+    const themeCheckbox = document.querySelector(".theme-toggle__checkbox");
+    themeCheckbox.checked = getTheme() === 'light-theme';
+
+    themeCheckbox.addEventListener('change', function (event) {
+        setTheme(event.target.checked ? 'light-theme' : 'dark-theme');
+    });
+  </script>
+</body>
+</html>
